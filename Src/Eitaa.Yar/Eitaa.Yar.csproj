@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+		<LangVersion>11</LangVersion>
+		<Nullable>enable</Nullable>
+		<WarningLevel>7</WarningLevel>
+		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<AnalysisMode>AllEnabledByDefault</AnalysisMode>
+		<AnalysisLevel>latest-recommended</AnalysisLevel>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Package">
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<Title>Eitaa Yar API Client</Title>
+		<Description>
+			The Yar API is an HTTP-based interface created for developers keen on building bots for Eitaa.
+		</Description>
+		<PackageId>Eitaa.Yar</PackageId>
+		<Authors>immmdreza</Authors>
+		<Copyright>Copyright © Mohammadreza Eyshabadi 2023</Copyright>
+		<PackageProjectUrl>https://github.com/EitaaYars/Eitaa.Yar</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/EitaaYars/Eitaa.Yar.git</RepositoryUrl>
+		<PackageTags>Eitaa;Bot;Api;Yar</PackageTags>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>
+			$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb
+		</AllowedOutputExtensionsInPackageBuildOutputFolder>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
+		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+</Project>

@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1D3D34E8-B7C1-43B4-B484-EB08F6752A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eitaa.Yar", "Src\Eitaa.Yar\Eitaa.Yar.csproj", "{80605A18-7301-4EF4-B2F5-92B3000F08D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7F866757-FE0A-400F-A5AA-D289A870468C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarlyTests", "EarlyTests\EarlyTests.csproj", "{12707E07-8394-4650-9351-9B3701CADE44}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80605A18-7301-4EF4-B2F5-92B3000F08D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80605A18-7301-4EF4-B2F5-92B3000F08D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80605A18-7301-4EF4-B2F5-92B3000F08D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80605A18-7301-4EF4-B2F5-92B3000F08D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12707E07-8394-4650-9351-9B3701CADE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12707E07-8394-4650-9351-9B3701CADE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12707E07-8394-4650-9351-9B3701CADE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12707E07-8394-4650-9351-9B3701CADE44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80605A18-7301-4EF4-B2F5-92B3000F08D2} = {1D3D34E8-B7C1-43B4-B484-EB08F6752A5D}
+		{12707E07-8394-4650-9351-9B3701CADE44} = {7F866757-FE0A-400F-A5AA-D289A870468C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C8516C2-6699-41DA-8673-6F005B979A0E}
